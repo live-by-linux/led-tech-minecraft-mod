@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "led-tech:block/red_led_off"
+    },
+    "lit=true": {
+      "model": "led-tech:block/red_led_on"
+    }
+  }
+}

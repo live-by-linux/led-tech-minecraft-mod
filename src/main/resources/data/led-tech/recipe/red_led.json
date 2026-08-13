@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "RLR",
+    " R "
+  ],
+  "key": {
+    "R": "minecraft:red_stained_glass_pane",
+    "L": "minecraft:redstone_lamp"
+  },
+  "result": {
+    "id": "led-tech:red_led",
+    "count": 4
+  }
+}

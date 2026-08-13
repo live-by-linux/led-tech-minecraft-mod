@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "led-tech",
+	"version": "${version}",
+	"name": "LED tech",
+	"description": "This mod adds LED blocks to minecraft, which light up when powered by redstone",
+	"authors": [
+		"live-by-linux"
+	],
+	"contact": {
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/led-tech/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ledtech.modid.LedTech"
+		],
+		"client": [
+			"ledtech.modid.client.LedTechClient"
+		]
+	},
+	"mixins": [
+		"led-tech.mixins.json",
+		{
+			"config": "led-tech.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
